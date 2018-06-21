@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crescente</title>
+<link href="Style/style.css" rel="stylesheet" type="text/css">
+<link href="Style/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+</head>
+
+<body>
+<div class="top"></div>
+
+<!----------------------LODIG FORM START---------------------->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container form-bottom" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!----------------------LODIG FORM ENC---------------------->
+
+<!---------------------SIGNUP FORM START---------------------->
+
+
+
+<!---------------------SIGNUP FORM END---------------------->
+
+<div class="header">
+  <div class="container">
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+         <div class="com-logo"> <a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
+         </div>
+       </div>
+       <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+         <div class="log-reg">
+         </div>
+       </div>
+  </div>
+</div>
+
+<div class="reg-form-page">
+  <div class="container">
+    <div class="reg-form-pnl">
+     <h2>Join With Us</h2>
+     
+  <form class="reg-form-bg animate" action="#">
+
+    <div class="container">
+      <div class="form-group">
+        <label for="uname"><b>Company Name</b></label>
+        <input type="text" placeholder="Company Name" name="uname" required>
+      </div>
+      
+      <div class="form-group">
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Owner
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Chief Compliance officer
+        </label>
+      </div>
+      
+      <div class="form-group">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+ 
+      <div class="form-group">
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="psw" required>
+      </div>
+
+      <div class="form-group">
+        <label for="psw"><b>Compliance Role</b></label>
+        <select class="reg-dd">
+          <option>...Select Role...</option>
+          <option>Compliance Controller</option>
+          <option>Banker</option>
+          <option>Dispensary</option>
+          <option>Grower</option>
+          <option>Supplier</option>
+        </select>
+      </div>
+
+
+      <button type="submit">Register</button>
+    </div>
+
+  </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <div class="footer-left">
+          <p>© 2018 Crescente</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="footer-mid">
+          <ul>
+          <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a class="instagram" href="#" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+         <div class="footer-right">
+           <p><a href="#">Privacy Policy</a></p>
+         </div>
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/arrow23.js"></script>
+
+</body>
+</html>
